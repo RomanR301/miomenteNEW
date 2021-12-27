@@ -1,0 +1,269 @@
+.GWA .rating-box {
+    width: 96px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    background: url(../../images/review_star_empty.png) 0 0 repeat-x;
+    text-indent: -999em;
+    overflow: hidden;
+    background-size: 20px;
+}
+
+.GWA .rating-box .rating {
+    float: left;
+    height: 20px;
+    background: url(../../images/review_star_fill.png) 0 0 repeat-x;
+    background-size: 20px;
+}
+
+.GWA .ratings,
+.GWA .catalog-category-view div.ratings{
+    line-height: 1.0833em;
+    margin: 0 !important;
+}
+
+.GWA .no-rating{
+    margin-bottom: 4px !important;
+}
+
+.GWA.categories h2 {
+    margin-bottom: 0;
+}
+
+.GWA .calendar {
+    border: unset;
+    background: unset;
+    cursor:unset;
+}
+
+
+/* Min-Height of Swiper Product-Item Card */
+.GWA.seller.swiper .card-info{
+    min-height:120px;
+}
+
+@media screen and (max-width: 540px) {
+    .GWA.seller .swiper-slide {
+        max-width: 320px;
+    }
+
+    .GWA .container {
+        padding: 0 8px;
+    }
+
+    .GWA .card__image {
+        height: 200px !important;
+        min-height: 200px !important;
+        max-height: 200px !important;
+    }
+
+
+}
+
+.GWA.hero {
+    padding: 200px 0 300px;
+}
+.GWA.hero .hero-dropdown {
+    top:58% !important;
+}
+
+@media screen and (max-width: 420px) {
+    .GWA.categories .categories-card h3 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .GWA.categories .categories-card h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .GWA.works .works-small {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .GWA .works-card p {
+        -webkit-line-clamp: 10;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 991px) { /* Menu Breakpoint */
+    .GWA.header .nav__link img.displaymobile{
+        display:block !important;
+    }
+    .nav-dropdown .nav-dropdown-wrapper .disabled{
+        display:none;
+    }
+    .nav-dropdown-list.active{
+        display:block !important;
+    }
+    .nav-sub__trigger img.disabled{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width: 540px){ /* Small Handy Portrait Breakpoint */
+    .GWA.seller.swiper .card-info{
+        min-height:120px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .GWA.seller.swiper .card-info {
+        min-height: 120px;
+    }
+}
+
+/* Fix for images under video */
+.GWA.works .works-card__image{
+     z-index:0;
+ }
+.GWA.works .works-card-text {
+    z-index:1;
+}
+
+/* Fix for cart label */
+.GWA.header .cart__trigger .label {
+    top: 20px !important;
+}
+
+@media screen and (max-width: 991px) {
+    .GWA.header .cart__trigger .label {
+        top: 10px !important;
+        right: 5px !important;
+    }
+}
+
+    /* Swiper Scrollbar */
+@media screen and (max-width: 991px){
+    .GWA.seller .seller-slider {
+        position: relative;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .swiper-scrollbar{
+        display:none;
+    }
+}
+
+.GWA.categories .categories-table::before{
+    height:210px;
+}
+
+
+.GWA.footer .safety-list {
+    align-items: center;
+}
+
+
+/* Fullscreen begin */
+.cms-index-index .grid12-12,
+.cms-index-index .grid-full,
+.catalog-category-view.category-genuss-kategorien .grid12-12,
+.catalog-category-view.category-genuss-kategorien .grid-full,
+.catalog-category-view.category-eventsathome .grid12-12,
+.catalog-category-view.category-eventsathome .grid-full{
+    width: 100%;
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.catalog-category-view.category-genuss-kategorien .grid-full.breadcrumbs,
+.catalog-category-view.category-eventsathome .grid-full.breadcrumbs{
+    display:none;
+}
+
+.catalog-category-view.category-genuss-kategorien .GWA.breadcrumbs .grid-full.breadcrumbs,
+.catalog-category-view.category-eventsathome .GWA.breadcrumbs .grid-full.breadcrumbs{
+    display:block;
+}
+
+.GWA.breadcrumbs li span {
+    margin: 8px 4px 6px;
+}
+
+
+.GWA .container {
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0;
+    min-width: unset !important;
+    width: 100%;
+}
+
+.GWA.seller .seller-slider {
+   max-width: 1420px;
+
+}
+
+
+.GWA.categories .container {
+    max-width: 1420px;
+}
+
+.cms-index-index .GWA.seller,
+.cms-index-index .GWA.categories,
+.catalog-category-view.category-genuss-kategorien .GWA.seller,
+.catalog-category-view.category-genuss-kategorien .GWA.categories,
+.catalog-category-view.category-eventsathome .GWA.seller,
+.catalog-category-view.category-eventsathome .GWA.categories
+{
+    padding-top: 120px;
+    padding-bottom: 140px;
+}
+
+@media screen and (max-width: 991px){
+    .cms-index-index .GWA.seller,
+    .cms-index-index .GWA.categories,
+    .catalog-category-view.category-genuss-kategorien .GWA.seller,
+    .catalog-category-view.category-genuss-kategorien .GWA.categories,
+    .catalog-category-view.category-eventsathome .GWA.seller,
+    .catalog-category-view.category-eventsathome .GWA.categories
+    {
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+}
+
+.cms-index-index .container,
+.catalog-category-view.category-genuss-kategorien .container,
+.catalog-category-view.category-eventsathome .container
+{
+    width: unset;
+}
+
+@media only screen and (min-width: 1280px) {
+    .cms-index-index .main.container,
+    .catalog-category-view.category-genuss-kategorien .main.container,
+    .catalog-category-view.category-eventsathome .main.container
+    {
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .cms-index-index .container,
+    .catalog-category-view.category-genuss-kategorien .container,
+    .catalog-category-view.category-eventsathome .container{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .GWA.newsletter {
+        padding: 30px 0 75px !important;
+    }
+}
+
+.GWA.events-preview .events-preview__image {
+    overflow: unset;
+}
+
+/* Fullscreen end */

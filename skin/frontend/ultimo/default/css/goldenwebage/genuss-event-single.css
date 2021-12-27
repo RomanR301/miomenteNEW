@@ -1,0 +1,1277 @@
+.genuss-event-single {
+  overflow: initial;
+}
+
+.main.container.GWA {
+  width: 100%;
+  max-width: 1420px;
+}
+
+.col-main.GWA {
+  width: 100%;
+}
+
+.genuss-event-single .container {
+  min-width: auto !important;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.GWA.breadcrumbs {
+  margin-bottom: 64px;
+}
+
+/* Start Filters =====> */
+.GWA.filters {
+  margin: 44px 0 160px;
+}
+
+.GWA.filters .container {
+  max-width: 940px;
+}
+
+.GWA.filters h2 {
+  font-size: 20px;
+  margin: 0 auto 15px;
+}
+
+.GWA.filters .filters-table {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: -10px;
+}
+
+.GWA.filters .filters-wrapper {
+  flex: 0 0 auto;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.GWA.filters .filters-custom {
+  opacity: 0;
+  position: absolute;   
+}
+
+.GWA.filters .filters-custom {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+}
+
+.GWA.filters .filters-custom-label {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: relative;
+  border: 1px solid #909090;
+  border-radius: 30px;
+  color: #909090;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.GWA.filters .filters-custom:checked + .filters-custom-label {
+  color: #A4006A;
+  border-color: #A4006A;
+}
+
+/* End Filters */
+
+/* Start Products =====> */
+.GWA.products .products-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.GWA.products h2 {
+  font-size: 40px;
+  margin: 0 60px 0 0;
+}
+
+/* Datepicker Trigger */
+.GWA.products .datepicker__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 8px;
+}
+
+.GWA.products .datepicker__trigger input {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 22px 64px 22px 84px;
+  width: 100%;
+  cursor: pointer;
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1
+}
+
+.GWA.products .datepicker__trigger .icon-calendar {
+  position: absolute;
+  top: 50%;
+  left: 44px;
+  transform: translateY(-50%);
+}
+
+.GWA.products .datepicker__trigger .icon-dropdown {
+  position: absolute;
+  top: 50%;
+  right: 44px;
+  transform: translateY(-50%);
+  width: 18.89px;
+  height: 11.25px;
+}
+
+/* Sort */
+.GWA.products .sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 34px 0 0;
+}
+
+.GWA.products .sort-wrapper {
+  position: relative;
+}
+
+.GWA.products .sort__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.GWA.products .sort__trigger .current-value {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin-left: 4px;
+}
+
+.GWA.products .sort__trigger .icon-dropdown {
+  width: 14.65px;
+  height: 7.02px;
+  margin-left: 20px;
+}
+
+.GWA.products .sort-list {
+  display: none;
+  z-index: 20;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.GWA.products .sort-list.active {
+  display: block;
+}
+
+.GWA.products .sort-item {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.GWA.products .sort-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.GWA.products.seller {
+  padding: 0;
+}
+
+.GWA.products .products-table {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.GWA.products .products-wrapper {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 10px;
+}
+
+/* Card */
+.GWA.products .card {
+  text-align: left;
+}
+
+.GWA.products .card-info p {
+  line-height: 1.4;
+}
+
+.GWA.products .card .price {
+  position: relative;
+  padding-left: 35px;
+}
+
+/* End Products */
+
+/* Start Subscribe =====> */
+.GWA.subscribe {
+  margin: 254px 0;
+}
+
+.GWA.subscribe .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.GWA.subscribe .subscribe__image {
+  max-width: 625px;
+  max-height: 625px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.GWA.subscribe .subscribe__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.GWA.subscribe .subscribe-text {
+  max-width: 540px;
+  margin-left: 40px;
+  margin-right: 120px;
+}
+
+.GWA.subscribe .subtitle {
+  display: none;
+  color: #595959;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.GWA.subscribe h4 {
+  color: #A4006A;
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.GWA.subscribe p {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1.4;
+}
+
+.GWA.subscribe .btn-primary {
+  margin-top: 50px;
+}
+
+/* End Subscribe */
+
+/* Start Questions =====> */
+.GWA.questions {
+  margin: 156px 0 200px;
+}
+
+.GWA.questions .container {
+  max-width: 940px;
+}
+
+.GWA.questions h2 {
+  margin: 0 auto 56px;
+}
+
+.GWA.questions h4 {
+  color: #A4006A;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.GWA.questions .questions-list {
+  margin-top: 80px;
+}
+
+.GWA.questions .questions-list h2 {
+  max-width: 600px;
+  font-size: 40px;
+  margin: 0 auto 70px;
+}
+
+.GWA.questions p {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.GWA.questions .questions-item:not(:last-child) {
+  margin-bottom: 65px;
+}
+
+/* End Questions */
+
+
+/* Start Datepicker =====> */
+.GWA.datepicker {
+  display: none;
+  z-index: 90;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.GWA.datepicker .datepicker-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 58px 0 60px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.GWA.datepicker .datepicker-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58px;
+  background: #F5F5F5;
+}
+
+.GWA.datepicker .datepicker-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #EEEEEE;
+}
+
+.GWA.datepicker .checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 32px 30px 20px;
+}
+
+.GWA.datepicker .checkbox-container span {
+  display: block;
+  max-width: 250px;
+  color: #A4006A;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.GWA.datepicker .datepicker-custom {
+  opacity: 0;
+  position: absolute;   
+}
+
+.GWA.datepicker .datepicker-custom, .datepicker-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+}
+
+.GWA.datepicker .datepicker-custom-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #595959;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.GWA.datepicker .datepicker-custom + .datepicker-custom-label:before {
+  content: '';
+  background: #fff;
+  border: 1px solid #707070;
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  margin-right: 14px;
+}
+
+.GWA.datepicker .datepicker-custom:checked + .datepicker-custom-label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  background: #A4006A;
+}
+
+.GWA.datepicker .datepicker-apply {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  background: #A4006A;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+
+.GWA.datepicker .datepicker-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: fit-content;
+  height: fit-content;
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 5px;
+}
+
+.GWA.datepicker .icon-calendar {
+  width: 15.75px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+/* Date Range Picker */
+.GWA.daterangepicker {
+  position: relative;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.GWA.daterangepicker::before,
+.GWA.daterangepicker::after {
+  display: none;
+}
+
+.GWA.daterangepicker.show-calendar .drp-buttons {
+  display: none;
+}
+
+.GWA.daterangepicker .drp-calendar {
+  max-width: fit-content;
+}
+
+.GWA.daterangepicker .drp-calendar.left {
+  padding: 24px 34px 20px 20px;
+}
+
+.GWA.daterangepicker .drp-calendar.right {
+  padding: 24px 20px 20px 34px;
+  border-right: 1px solid #EEEEEE;
+}
+
+.GWA.daterangepicker .calendar-table {
+  padding: 0;
+}
+
+.GWA.daterangepicker .calendar-table td,
+.GWA.daterangepicker .calendar-table th {
+  z-index: 1;
+  position: relative;
+  color: #1D2634;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 42px;
+  height: 42px;
+  width: 42px;
+  border: none;
+  border-radius: 0;
+}
+
+.GWA.daterangepicker .calendar-table th {
+  color: #BEBEBE;
+  font-weight: 500;
+}
+
+.GWA.daterangepicker .calendar-table th.month {
+  color: #595959;
+  font-weight: 500;
+}
+
+.GWA.daterangepicker td.off, .GWA.daterangepicker td.off.in-range, .GWA.daterangepicker td.off.start-date, .GWA.daterangepicker td.off.end-date {
+  opacity: 0.2;
+}
+
+.GWA.daterangepicker td.in-range {
+  background: #F5F5F5;
+}
+
+.GWA.daterangepicker td.active.start-date.end-date::after {
+  border-radius: 100px;
+}
+
+.GWA.daterangepicker td.active::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #A4006A;
+  border-radius: 100px;
+}
+
+.GWA.daterangepicker td.active::after {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+}
+
+.GWA.daterangepicker td.active.start-date::after {
+  border-radius: 100px 0 0 100px;
+}
+
+.GWA.daterangepicker td.active.end-date::after {
+  border-radius: 0 100px 100px 0;
+}
+
+.GWA.daterangepicker td.active, .GWA.daterangepicker td.active:hover {
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+
+.GWA.daterangepicker .datepicker-arrow {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  margin: 0 auto;
+}
+
+.GWA.daterangepicker .datepicker-arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+.GWA.daterangepicker .drp-header {
+  position: absolute;
+  bottom: calc(100% + 20px);
+  right: 60px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.GWA.daterangepicker .drp-selected {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* End Datepicker */
+
+/* Start Confirm =====> */
+.GWA.confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.GWA.confirm .confirm-icon {
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.GWA.confirm .confirm-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.GWA.confirm span {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  color: #028488;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* End Confirm */
+
+/* Start Alternative =====> */
+.GWA.alternative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 24px;
+}
+
+.GWA.alternative .alternative-icon {
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.GWA.alternative .alternative-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.GWA.alternative span {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  color: #595959;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.GWA.alternative .btn-primary {
+  margin-top: 38px;
+}
+
+.GWA.alternative h2 {
+  margin: 120px auto 0 0;
+}
+/* End Alternative */
+
+/* Start Card =====> */
+.GWA .card-main {
+  position: relative;
+}
+
+.GWA .card .date {
+  width: 100%;
+}
+
+.GWA .card .date-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: -5px;
+}
+
+.GWA .card .date-wrapper {
+  flex: 0 0 auto;
+  max-width: fit-content;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GWA .card .date .icon-calendar {
+  margin-right: 5px;
+  min-width: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.GWA .card .date__link {
+  text-align: center;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #595959;
+  border-radius: 30px;
+  padding: 6px 16px;
+}
+
+.GWA .card .date__link span {
+  display: block;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 1;
+}
+
+
+.GWA .card .date__trigger {
+  margin-left: auto;
+  border: 1px solid #595959;
+  border-radius: 30px;
+  padding: 6px 24px;
+}
+
+.GWA .card .date__trigger span {
+  display: block;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 1;
+}
+
+.GWA .card .date-list {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background: #ffffff;
+  padding: 20px 20px 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.GWA .card .date-list.active {
+  display: block;
+}
+
+.GWA .card .date-table {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: -5px;
+}
+
+.GWA .card .date-list .date-wrapper {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 5px;
+}
+
+.GWA .card .date-list .date-wrapper.full {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.GWA .card .date-list .date__link {
+  width: 100%;
+  padding: 6px 8px;
+}
+
+.GWA .card .date-list .date__trigger {
+  border: none;
+  padding: 0;
+  color: #595959;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.GWA .card .calendar-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.GWA .card .calendar-title .icon-calendar {
+  margin-right: 10px;
+}
+
+.GWA .card .calendar-title span {
+  color: #A4006A;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* End Card */
+
+/* Media 1450px */
+@media screen and (max-width: 1450px) {
+  .GWA .container {
+    padding: 0 10px;
+  }
+
+  /* Start Filters =====> */
+  .GWA.filters .container {
+    max-width: 980px;
+    padding: 0 20px;
+  }
+  /* End Filters */
+
+  /* Start Products =====> */
+  .GWA.products .products-title {
+    margin: 0 10px;
+  }
+
+  .GWA.products .sort {
+    margin: 34px 10px 40px;
+  }
+  /* End Products */
+
+  /* Start Subscribe =====> */
+  .GWA.subscribe .container {
+    padding: 0 20px;
+  }
+  /* End Subscribe */
+
+  /* Start Questions =====> */
+  .GWA.questions .container {
+    padding: 0 20px;
+  }
+  /* End Questions */
+}
+
+/* Media 1200px */
+@media screen and (max-width: 1200px) {
+  /* Start Datepicker =====> */
+  .GWA.datepicker {
+    padding: 0 20px;
+  }
+  /* End Datepicker */
+  /* Start Subscribe =====> */
+  .GWA.subscribe .subscribe-text {
+    margin-right: 0;
+  }
+  /* End Subscribe */
+}
+
+/* Media 1100px */
+@media screen and (max-width: 1100px) {
+  /* Start Datepicker =====> */
+  .GWA.datepicker {
+    max-width: fit-content;
+  }
+
+  .GWA.datepicker .datepicker-container {
+    flex-direction: column;
+  }
+
+  .GWA.datepicker .checkbox-container {
+    padding: 0 30px 20px;
+  }
+
+  /* Date Range Picker */
+  .GWA.daterangepicker .drp-calendar.right {
+    border: none;
+  }
+
+  .GWA.daterangepicker .drp-header {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* End Datepicker */
+}
+
+/* Media 991px */
+@media screen and (max-width: 991px) {
+  /* Start Datepicker =====> */
+
+  .GWA.datepicker .checkbox-container {
+    position: relative;
+    width: 100%;
+    padding: 24px 20px 40px;
+  }
+
+  .GWA.datepicker .checkbox-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    height: 1px;
+    background: #EEEEEE;
+  }
+
+  .GWA.datepicker .datepicker-footer {
+    border: none;
+  }
+  /* End Datepicker */
+
+  /* Start Subscribe =====> */
+  .GWA.subscribe {
+    margin: 80px 0;
+  }
+
+  .GWA.subscribe .container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .GWA.subscribe .subscribe__image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .GWA.subscribe .subscribe-text {
+    margin: 28px 0 0;
+  }
+
+  .GWA.subscribe .subtitle {
+    display: block;
+  }
+
+  .GWA.subscribe p {
+    display: none;
+  }
+
+  .GWA.subscribe .btn-primary {
+    margin: 0;
+  }
+  /* End Subscribe */
+
+  /* Start Filters =====> */
+  .GWA.filters {
+    margin: 75px 0 20px;
+  }
+
+  .GWA.filters .container {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .GWA.filters .filters-table {
+    flex-wrap: unset;
+    overflow-x: auto;
+    margin: 0;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .GWA.filters .filters-wrapper {
+    padding: 0 10px;
+  }
+
+  .GWA.filters .filters-wrapper:first-child {
+    padding-left: 40px;
+  }
+
+  .GWA.filters .filters-wrapper:last-child {
+    padding-right: 40px;
+  }
+  /* End Filters */
+
+  /* Start Products =====> */
+  .GWA.products .products-title {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 30px;
+  }
+
+  .GWA.products .sort {
+    margin: 20px 30px 34px;
+    justify-content: flex-start;
+  }
+
+  .GWA.products h2 {
+    font-size: 36px;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .GWA.products .products-table {
+    padding-top: 0;
+  }
+
+  /* Datepicker Trigger */
+  .GWA.products .datepicker__trigger input {
+    padding: 10px 44px 10px 44px;
+  }
+
+  .GWA.products .datepicker__trigger .icon-calendar {
+    left: 16px;
+  }
+  
+  .GWA.products .datepicker__trigger .icon-dropdown {
+    right: 16px;
+  }
+  /* End Products */
+
+  /* Start Questions =====> */
+  .GWA.questions {
+    margin: 80px 0;
+  }
+
+  .GWA.questions .container {
+    padding: 0 40px;
+  }
+
+  .GWA.questions h2 {
+    margin-bottom: 24px;
+  }
+
+  .GWA.questions .questions-list {
+    margin-top: 100px;
+  }
+  
+  .GWA.questions .questions-list h2 {
+    font-size: 36px;
+    margin-bottom: 56px;
+  }
+
+  .GWA.questions .questions-item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  /* End Questions */
+
+  /* Start Confirm =====> */
+  .GWA.confirm {
+    margin: 60px 30px;
+  }
+  /* End Confirm */
+
+  /* Start Alternative =====> */
+  .GWA.alternative {
+    margin: 60px 30px 0;
+  }
+  .GWA.alternative h2 {
+    margin: 70px 0 0;
+  }
+  /* End Alternative */
+}
+
+/* Media 768px */
+@media screen and (max-width: 768px) {
+  /* Start Datepicker =====> */
+  .GWA.datepicker .datepicker-container {
+    overflow: visible;
+  }
+  .GWA.datepicker .datepicker-header {
+    border-radius: 8px 8px 0 0;
+  }
+  .GWA.datepicker .datepicker-footer {
+    padding: 0 20px 20px;
+  }
+  .GWA.datepicker .datepicker-apply {
+    width: 100%;
+    font-size: 16px;
+  }
+  .GWA.datepicker .datepicker-close {
+    top: unset;
+    right: 0;
+    bottom: calc(100% + 20px);
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .GWA.datepicker .drp-header {
+    left: 20px;
+    transform: translateX(0);
+  }
+  .GWA.datepicker .icon-calendar {
+    margin-right: 10px;
+  }
+  .GWA.daterangepicker {
+    width: auto;
+  }
+  .GWA.daterangepicker .drp-selected {
+    font-size: 16px;
+  }
+  .GWA.daterangepicker .drp-calendar.left {
+    padding: 20px;
+  }
+  .GWA.daterangepicker .drp-calendar.right {
+    position: absolute;
+    right: 20px;
+    padding: 20px 0 0;
+  }
+  .GWA.daterangepicker .calendar-table td,
+  .GWA.daterangepicker .calendar-table th {
+    font-size: 16px;
+  }
+  .GWA.daterangepicker .drp-calendar.right .calendar-table td,
+  .GWA.daterangepicker .drp-calendar.right .calendar-table th {
+    display: none;
+  }
+  .GWA.daterangepicker .drp-calendar.right .next.available {
+    display: table-cell;
+  }
+  /* End Datepicker */
+}
+
+/* Media 540px */
+@media screen and (max-width: 540px) {
+  /* Start Products =====> */
+  .GWA.products .datepicker__trigger {
+    width: 100%;
+  }
+  /* End Products */
+  /* Start Card =====> */
+  .GWA .card .date-header {
+    margin: -2px;
+  }
+  .GWA .card .date-wrapper {
+    padding: 2px;
+  }
+  .GWA .card .date__link {
+    padding: 6px 8px;
+  }
+  .GWA .card .date__trigger {
+    padding: 6px 10px;
+  }
+  .GWA .card .date-table {
+    margin: -8px;
+  }
+  .GWA .card .date-list .date-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 8px;
+  }
+  .GWA .card .date-list .date-wrapper.full {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .GWA .card .date-list .date-wrapper.mobile-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .GWA .card .calendar-title span {
+    font-size: 18px;
+  }
+  /* End Card */
+}
+
+/* Media 428px */
+@media screen and (max-width: 428px) {
+  /* Sta */
+  .GWA .card-main {
+    padding: 18px;
+  }
+
+  .GWA .card .date__link,
+  .GWA .card .date__trigger {
+    padding: 4px 6px;
+  }
+
+  .GWA .card .date__link span {
+    font-size: 12px;
+  }
+  .GWA .card .date__trigger span {
+    font-size: 12px;
+  }
+  /*  */
+}
+
+/* Media 420px */
+@media screen and (max-width: 420px) {
+  /* Start Products =====> */
+  .GWA.products .datepicker__trigger input {
+    font-size: 14px;
+  }
+  /* End Products */
+}
+
+/* Media 380px */
+@media screen and (max-width: 380px) {
+  /* Start Datepicker =====> */
+  .GWA.datepicker {
+    max-width: 320px;
+  }
+  .GWA.datepicker .checkbox-container {
+    padding: 24px 13px 40px;
+  }
+  .GWA.daterangepicker .drp-calendar.left {
+    padding: 0 13px;
+  }
+  .GWA.datepicker .datepicker-footer {
+    padding: 0 13px 20px;
+  }
+  .GWA.daterangepicker .calendar-table td,
+  .GWA.daterangepicker .calendar-table th {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+  }
+  /* End Datepicker */
+  /* Start Filters =====> */
+  .GWA.filters .filters-wrapper:first-child {
+    padding-left: 20px;
+  }
+
+  .GWA.filters .filters-wrapper:last-child {
+    padding-left: 20px;
+  }
+  /* End Filters */
+
+  /* Start Products =====> */
+  .GWA.products .products-title {
+    margin: 0 10px;
+  }
+
+  .GWA.products .sort {
+    margin: 20px 10px 34px;
+  }
+
+  .GWA.products .sort-wrapper {
+    width: 100%;
+  }
+  /* End Products */
+  
+  /* Start Confirm =====> */
+  .GWA.confirm {
+    margin: 60px 10px;
+  }
+  /* End Confirm */
+
+  /* Start Alternative =====> */
+  .GWA.alternative {
+    margin: 60px 10px 0;
+  }
+  /* End Alternative */
+}

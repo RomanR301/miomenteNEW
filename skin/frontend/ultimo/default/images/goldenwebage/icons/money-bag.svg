@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.803" height="27.965" viewBox="0 0 21.803 27.965">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_326" data-name="Прямоугольник 326" width="21.803" height="27.965" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_774" data-name="Сгруппировать 774" transform="translate(2 2)">
+    <g id="Сгруппировать_774-2" data-name="Сгруппировать 774" transform="translate(-2 -2)" clip-path="url(#clip-path)">
+      <path id="Контур_324" data-name="Контур 324" d="M7.608,12.121C4.035,15.528,1,19.677,1,22.8c0,4.312,3.635,6.1,8.133,6.1s8.133-1.786,8.133-6.1c0-3.978-3.154-7.378-6.608-10.675" transform="translate(1.317 -4.151)" fill="none" stroke="#a4006a" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Контур_325" data-name="Контур 325" d="M14,27.7V28.2a1.016,1.016,0,0,0,1.017,1.017h1.017A1.016,1.016,0,0,0,17.05,28.2v-.792a1.017,1.017,0,0,0-.695-.964l-1.66-.553a1.017,1.017,0,0,1-.7-.964v-.792a1.016,1.016,0,0,1,1.017-1.017h1.017a1.016,1.016,0,0,1,1.017,1.017v.508" transform="translate(-5.075 -9.56)" fill="none" stroke="#a4006a" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Линия_132" data-name="Линия 132" y1="1.525" transform="translate(10.45 12.036)" fill="none" stroke="#a4006a" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Линия_133" data-name="Линия 133" y2="1.525" transform="translate(10.45 19.661)" fill="none" stroke="#a4006a" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Контур_326" data-name="Контур 326" d="M14.911,6.653c-.182.3-1.049.508-1.525.508a2.481,2.481,0,0,1-1.525-.508S9.571,2.238,9.653,2.078C10.395.647,11.94.922,13.388,1.316a8.928,8.928,0,0,0,3.278.441A39.1,39.1,0,0,1,14.911,6.653Z" transform="translate(-2.937 1.317)" fill="none" stroke="#a4006a" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
