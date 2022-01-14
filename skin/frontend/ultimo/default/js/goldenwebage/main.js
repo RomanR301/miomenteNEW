@@ -84,7 +84,7 @@ jQuery(function () {
         }
 
         if (start.weekday(5) || start.weekday(6) || start.weekday(7)) {
-          someDateRange = someDateRange.filter(element => element !== moment().format('DD-MM-YYYY'))
+          someDateRange = someDateRange.filter(function(element) { return element !== moment().format('DD-MM-YYYY')})
         } else {
           null
         }

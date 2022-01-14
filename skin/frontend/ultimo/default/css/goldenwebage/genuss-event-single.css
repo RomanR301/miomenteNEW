@@ -1027,6 +1027,7 @@ body.lock {
     margin: 0;
     padding-bottom: 40px;
     position: relative;
+    justify-content: flex-start;
   }
 
   .GWA.filters .filters-wrapper {
@@ -1264,7 +1265,7 @@ body.lock {
     padding: 24px 13px 40px;
   }
   .GWA.daterangepicker .drp-calendar.left {
-    padding: 0 13px;
+    padding: 20px 13px 0;
   }
   .GWA.datepicker .datepicker-footer {
     padding: 0 13px 20px;
@@ -1277,6 +1278,11 @@ body.lock {
     line-height: 36px;
     width: 36px;
   }
+  .GWA.daterangepicker td.active::before {
+    width: 34px;
+    height: 34px;
+  }
+
   /* End Datepicker */
   /* Start Filters =====> */
   .GWA.filters .filters-wrapper:first-child {
