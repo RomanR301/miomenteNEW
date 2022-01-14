@@ -82,6 +82,13 @@ jQuery(function () {
           someDateRange.push(thursday.format('DD-MM-YYYY'));
           someDateRange.push(moment().format('DD-MM-YYYY'));
         }
+
+        if (start.weekday(5) || start.weekday(6) || start.weekday(7)) {
+          someDateRange = someDateRange.filter(element => element !== moment().format('DD-MM-YYYY'))
+        } else {
+          null
+        }
+
       }
 
       jQuery('input[name="daterange"]').data().daterangepicker.updateView()
