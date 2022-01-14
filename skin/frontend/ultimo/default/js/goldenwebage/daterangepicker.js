@@ -515,13 +515,20 @@
 
             this.container.find('.drp-selected').html(this.startDate.format(this.locale.format) + this.locale.separator + this.endDate.format(this.locale.format));
 
+            // Custom date's =====>
+            // let customStart = document.querySelector('#from_date')
+            // let customEnd = document.querySelector('#to_date')
+
+            // customStart.value = this.startDate.format(this.locale.format)
+            // customEnd.value = this.endDate.format(this.locale.format)
+
             if (!this.isShowing)
                 this.updateElement();
 
             this.updateMonthsInView();
         },
 
-        isInvalidDate: function() {
+        isInvalidDate: function(date) {
             return false;
         },
 
@@ -576,6 +583,7 @@
               this.leftCalendar.month = this.maxDate.clone().date(2).subtract(1, 'month');
             }
         },
+        
 
         updateCalendars: function() {
 
@@ -1154,6 +1162,7 @@
             this.isShowing = true;
         },
 
+
         hide: function(e) {
             if (!this.isShowing) return;
 
@@ -1314,6 +1323,7 @@
             //
 
             if (this.endDate || date.isBefore(this.startDate, 'day')) { //picking start
+                document.getElementById('datepicker-checkbox-1').disabled = true;
                 if (this.timePicker) {
                     var hour = parseInt(this.container.find('.left .hourselect').val(), 10);
                     if (!this.timePicker24Hour) {
@@ -1337,6 +1347,7 @@
                 //but the time of the end date is before the start date
                 this.setEndDate(this.startDate.clone());
             } else { // picking end
+                document.getElementById('datepicker-checkbox-1').disabled = false;
                 if (this.timePicker) {
                     var hour = parseInt(this.container.find('.right .hourselect').val(), 10);
                     if (!this.timePicker24Hour) {

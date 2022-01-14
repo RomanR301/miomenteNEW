@@ -1,15 +1,113 @@
 jQuery(function () {
 
-    // Open Date list in card //
-    jQuery('.GWA .card .date__trigger').click(function () {
-      jQuery(this).parents('.GWA .card').find('.date-list').toggleClass('active')
-    }) 
+    // Datepicker =====>
+    var someDateRange = [
 
-    // Datepicker //
+    ];
+
+    let start = moment();
+    let end = moment().add(365 , 'd');
+
+
+
+
+
+    const datepickerCheckbox = document.querySelector('.GWA.datepicker .checkbox-wrapper input')
+
+    datepickerCheckbox.addEventListener('click', function() {
+
+      if (someDateRange.length > 0) {
+        someDateRange = []
+        // Maximum number of dates to select
+        jQuery('input[name="daterange"]').data().daterangepicker.maxSpan.days = 365
+      } else {
+        // Maximum number of dates to select
+        jQuery('input[name="daterange"]').data().daterangepicker.maxSpan.days = 2
+
+
+        let firstValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.startDate.startOf('week').add(5, 'days');
+        let lastValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.endDate
+
+        if (jQuery('input[name="daterange"]').data().daterangepicker.endDate.isSame(firstValiableDay, 'week')) {
+
+          lastValiableDay.startOf('week').add(7, 'days');
+
+        } else {
+
+          let result = lastValiableDay.diff(firstValiableDay, 'days')
+
+          lastValiableDay.add(-result + 2, 'days')
+        }
+
+        // Monday;
+        let monday = start.clone().day(1);
+        if( monday.isAfter(start, 'd') ){
+          someDateRange.push(monday.format('DD-MM-YYYY'));
+        }
+        while( monday.isBefore(end) ){
+          monday.add(7, 'days');
+          someDateRange.push(monday.format('DD-MM-YYYY'));
+          someDateRange.push(moment().format('DD-MM-YYYY'));
+        }
+    
+        // Tuesday;
+        let tuesday = start.clone().day(2);
+        if( tuesday.isAfter(start, 'd') ){
+          someDateRange.push(tuesday.format('DD-MM-YYYY'));
+        }
+        while( tuesday.isBefore(end) ){
+          tuesday.add(7, 'days');
+          someDateRange.push(tuesday.format('DD-MM-YYYY'));
+          someDateRange.push(moment().format('DD-MM-YYYY'));
+        }
+
+        // Wednesday;
+        let wednesday = start.clone().day(3);
+        if( wednesday.isAfter(start, 'd') ){
+          someDateRange.push(wednesday.format('DD-MM-YYYY'));
+        }
+        while( wednesday.isBefore(end) ){
+          wednesday.add(7, 'days');
+          someDateRange.push(wednesday.format('DD-MM-YYYY'));
+          someDateRange.push(moment().format('DD-MM-YYYY'));
+        }
+
+        // Thursday;
+        let thursday = start.clone().day(4); 
+        if( thursday.isAfter(start, 'd') ){
+          someDateRange.push(thursday.format('DD-MM-YYYY'));
+        }
+        while( thursday.isBefore(end) ){
+          thursday.add(7, 'days');
+          someDateRange.push(thursday.format('DD-MM-YYYY'));
+          someDateRange.push(moment().format('DD-MM-YYYY'));
+        }
+      }
+
+      jQuery('input[name="daterange"]').data().daterangepicker.updateView()
+    })
+
     jQuery(function() {
       jQuery('input[name="daterange"]').daterangepicker({
         opens: 'center',
         parentEl: '.GWA.datepicker .datepicker-wrapper',
+        minYear: 2022,
+        minDate: moment(),
+        alwaysShowCalendars: true,
+        // If checkbox active
+        maxSpan: {
+          "days": 365
+        },
+        isInvalidDate:
+          function(date){
+            for(var ii = 0; ii < someDateRange.length; ii++){
+              if (date.format('DD-MM-YYYY') == someDateRange[ii]){
+                return true;
+              }
+            }
+          },
+        startDate: moment(),
+        endDate: moment(),
         locale: {
           format: 'DD.MM.YYYY',
           daysOfWeek: [
@@ -36,7 +134,7 @@ jQuery(function () {
               "Dezember"
           ],
           firstDay: 1
-        }
+        },
       })
     });
 
@@ -44,6 +142,7 @@ jQuery(function () {
       jQuery('.GWA.datepicker').show()
       jQuery('.GWA.overlay').addClass('active')
       jQuery('body').addClass('lock')
+      jQuery('input[name="daterange"]').data().daterangepicker.show()
     })
 
     $(document).on('click','.datepicker-close',function(){
@@ -51,6 +150,11 @@ jQuery(function () {
       jQuery('.GWA.datepicker').hide()
       jQuery('.GWA.overlay').removeClass('active')
       jQuery('body').removeClass('lock')
+      if (datepickerCheckbox.checked) {
+        datepickerCheckbox.click()
+      } else {
+        null
+      }
     });
 
     $(document).on('click','.datepicker-apply',function(){
@@ -60,6 +164,10 @@ jQuery(function () {
       jQuery('body').removeClass('lock')
     });
 
+    // Open Date list in card //
+    jQuery('.GWA .card .date__trigger').click(function () {
+      jQuery(this).parents('.GWA .card').find('.date-list').toggleClass('active')
+    }) 
 
     // Sort //
     jQuery('.sort__trigger').click(function () {
