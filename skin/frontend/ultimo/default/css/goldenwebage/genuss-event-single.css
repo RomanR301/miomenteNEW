@@ -23,6 +23,7 @@
 .main.container.GWA {
   width: 100%;
   max-width: 1420px;
+  padding: 0;
 }
 
 .col-main.GWA {
@@ -37,9 +38,21 @@ body.lock {
   overflow: hidden;
 }
 
-.GWA.breadcrumbs {
+.GWA.single.breadcrumbs {
   margin-bottom: 64px;
 }
+
+/* Start Preview Image =====> */
+.GWA.events-preview .mobile-visible {
+  display: none;
+}
+/* End Preview Image */
+
+/* Start Info =====> */
+.GWA.single.info {
+  padding-top: 76px;
+}
+/* End Info */
 
 /* Start Filters =====> */
 .GWA.filters {
@@ -107,6 +120,9 @@ body.lock {
 /* End Filters */
 
 /* Start Products =====> */
+.GWA.single.products {
+  margin-bottom: 240px;
+}
 .GWA.products .products-title {
   display: flex;
   align-items: center;
@@ -953,6 +969,20 @@ body.lock {
 
 /* Media 991px */
 @media screen and (max-width: 991px) {
+  .GWA.single.products {
+    margin-bottom: 180px;
+  }
+  .GWA.single.breadcrumbs {
+    margin: 20px 0 32px;
+  }
+  .GWA.events-preview {
+    padding-top: 0;
+  }
+  /* Start Info =====> */
+  .GWA.single.info {
+    padding-top: 50px;
+  }
+  /* End Info */
   /* Start Datepicker =====> */
 
   .GWA.datepicker .checkbox-container {
@@ -1008,6 +1038,8 @@ body.lock {
 
   .GWA.subscribe .btn-primary {
     margin: 0;
+    height: 40px;
+    max-width: 152px;
   }
   /* End Subscribe */
 
@@ -1089,20 +1121,21 @@ body.lock {
   }
 
   .GWA.questions h2 {
+    font-size: 33px;
     margin-bottom: 24px;
   }
 
   .GWA.questions .questions-list {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   
   .GWA.questions .questions-list h2 {
-    font-size: 36px;
-    margin-bottom: 56px;
+    font-size: 26px;
+    margin-bottom: 50px;
   }
 
   .GWA.questions .questions-item:not(:last-child) {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
   /* End Questions */
 
@@ -1124,6 +1157,27 @@ body.lock {
 
 /* Media 768px */
 @media screen and (max-width: 768px) {
+  .products-table.single .card__btn {
+    max-width: 120px;
+    height: 40px;
+  }
+
+  /* Start Info =====> */
+  .GWA.single.info .show-more {
+    top: -64px;
+    transition: all 0.15s ease-in-out;
+  }
+  .GWA.single.info .show-more.show {
+    top: 0;
+  }
+  .GWA.single.info .show-item {
+    line-height: 1.2;
+    max-height: 250px;
+  }
+  .GWA.single.info .show-item.show {
+    max-height: none;
+  }
+  /* End Info */
   /* Start Datepicker =====> */
   .GWA.datepicker .datepicker-container {
     overflow: visible;
@@ -1182,6 +1236,14 @@ body.lock {
 
 /* Media 540px */
 @media screen and (max-width: 540px) {
+  /* Start Preview Image =====> */
+  .GWA.events-preview .mobile-hidden {
+    display: none;
+  }
+  .GWA.events-preview .mobile-visible {
+    display: block;
+  }
+  /* End Preview Image */
   /* Start Products =====> */
   .GWA.products .datepicker__trigger {
     width: 100%;
@@ -1259,12 +1321,16 @@ body.lock {
 @media screen and (max-width: 380px) {
   /* Start Datepicker =====> */
   .GWA.datepicker {
-    max-width: 320px;
+    max-width: 340px;
+  }
+  .GWA.datepicker .datepicker-wrapper {
+    width: 100%;
   }
   .GWA.datepicker .checkbox-container {
     padding: 24px 13px 40px;
   }
   .GWA.daterangepicker .drp-calendar.left {
+    width: 100%;
     padding: 20px 13px 0;
   }
   .GWA.datepicker .datepicker-footer {
@@ -1277,6 +1343,9 @@ body.lock {
     height: 36px;
     line-height: 36px;
     width: 36px;
+  }
+  .GWA.datepicker .datepicker-custom-label {
+    font-size: 15px;
   }
   .GWA.daterangepicker td.active::before {
     width: 34px;

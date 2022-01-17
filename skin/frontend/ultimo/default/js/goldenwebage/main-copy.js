@@ -8,10 +8,6 @@ jQuery(function () {
   let start = moment();
   let end = moment().add(365 , 'd');
 
-
-
-
-
   const datepickerCheckbox = document.querySelector('.GWA.datepicker .checkbox-wrapper input')
 
   datepickerCheckbox.addEventListener('click', function() {
@@ -23,21 +19,6 @@ jQuery(function () {
     } else {
       // Maximum number of dates to select
       jQuery('input[name="daterange"]').data().daterangepicker.maxSpan.days = 2
-
-
-      let firstValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.startDate.startOf('week').add(5, 'days');
-      let lastValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.endDate
-
-      if (jQuery('input[name="daterange"]').data().daterangepicker.endDate.isSame(firstValiableDay, 'week')) {
-
-        lastValiableDay.startOf('week').add(7, 'days');
-
-      } else {
-
-        let result = lastValiableDay.diff(firstValiableDay, 'days')
-
-        lastValiableDay.add(-result + 2, 'days')
-      }
 
       // Monday;
       let monday = start.clone().day(1);
@@ -83,16 +64,71 @@ jQuery(function () {
         someDateRange.push(moment().format('DD-MM-YYYY'));
       }
 
-      if (start.weekday(5) || start.weekday(6) || start.weekday(7)) {
-        someDateRange = someDateRange.filter(function(element) { return element !== moment().format('DD-MM-YYYY')})
-      } else {
-        null
+      let startOfWeek = start.format('DD-MM-YYYY');
+
+
+      let firstValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.startDate.startOf('week').add(startOfWeek, 'days');
+
+      function checkWeek() {
+        if (jQuery('input[name="daterange"]').data().daterangepicker.endDate.isSame(start, 'week')) {
+          console.log('CURRENT WEEK')
+          // jQuery('input[name="daterange"]').data().daterangepicker.startDate.isoWeekday(6);
+          // jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday(7);
+
+        } else if (jQuery('input[name="daterange"]').data().daterangepicker.endDate.isSame(firstValiableDay, 'week')) {
+          console.log('SAME  WEEK')
+          // jQuery('input[name="daterange"]').data().daterangepicker.startDate.isoWeekday(5);
+          // jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday(7);
+        } else if (jQuery('input[name="daterange"]').data().daterangepicker.startDate.isoWeekday(7) && jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday(7)) {
+          console.log('fuck')
+        } else {
+          console.log('PIDAR WEEK')
+          // let firstValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.startDate.startOf('week').add(5, 'days');
+          // let lastValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday("Sunday");
+          // let result = lastValiableDay.diff(firstValiableDay, 'days')
+          // console.log(result)
+          // if (result > 0) {
+          //   test = 2
+          //   lastValiableDay.add(-result + test, 'days')
+          // } else {
+          //   console.log('null')
+          // }
+        }
       }
 
+      function allowToday() {
+        someDateRange = someDateRange.filter(function(element) { return element !== start.format('DD-MM-YYYY')})
+      }
+
+      if (start.day() === 5) {
+        allowToday()
+        // startOfWeek = 5
+        // test = 2
+        // let lastValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday(5);
+        checkWeek()
+      } else if (start.day() === 6) {
+        allowToday()
+        // startOfWeek = 6
+        // test = 1
+        // let lastValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday(6);
+        checkWeek()
+      } else if (start.day() === 7) {
+        allowToday()
+        // startOfWeek = 7
+        // test = 0
+        // let lastValiableDay = jQuery('input[name="daterange"]').data().daterangepicker.endDate.isoWeekday(7);
+        checkWeek()
+      } else {
+        // startOfWeek = 5
+        // test = 2
+        checkWeek()
+      }
     }
 
     jQuery('input[name="daterange"]').data().daterangepicker.updateView()
   })
+
+
 
   jQuery(function() {
     jQuery('input[name="daterange"]').daterangepicker({
@@ -250,7 +286,6 @@ jQuery(function () {
   jQuery('.show-more button').click(function () {
     jQuery(this).parent().prev('.show-item').toggleClass('show');
     jQuery(this).toggleClass('show');
-    jQuery(this).parent().toggleClass('show');
     if (jQuery(this).parent().prev('.show-item').hasClass('show')) {
       jQuery(this).text('Weniger anzeigen');
     } else {

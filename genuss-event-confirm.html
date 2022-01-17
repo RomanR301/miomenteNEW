@@ -148,6 +148,8 @@
     <link rel="stylesheet" type="text/css" href="./skin/frontend/base/default/css/amscroll.css"
           media="all"/>
 
+		<link rel="stylesheet" type="text/css" href="./skin/frontend/ultimo/default/css/goldenwebage/footer.css"
+		  			media="all"/>
 		<link rel="stylesheet" type="text/css" href="./skin/frontend/ultimo/default/css/goldenwebage/daterangepicker.css"
 					media="all"/>
 		<link rel="stylesheet" type="text/css" href="./skin/frontend/ultimo/default/css/goldenwebage/genuss-event-single.css"
@@ -1689,11 +1691,12 @@
 					<div class="GWA events-preview">
 						<div class="container">
 							<div class="events-preview__image">
-								<img src="./skin/frontend/ultimo/default/images/goldenwebage/preview-1.png" alt="Decor Image">
+								<img src="./skin/frontend/ultimo/default/images/goldenwebage/preview-1.png" alt="Decor Image" class="mobile-hidden">
+								<img src="./skin/frontend/ultimo/default/images/goldenwebage/kochkurse-in-muenchen.png" alt="Decor Image" class="mobile-visible">
 							</div>
 						</div>
 					</div>
-					<div class="GWA info">
+					<div class="GWA single info">
 						<div class="container">
 							<h2>Kulinarische Events für Genießer</h2>
 							<p class="show-item">Werfen Sie einen Blick in die Töpfe exotischer Küchen oder lernen Sie Großmutters Geheimrezept nachkochen. Kosten Sie bei einer Weinprobe aufregende Tropfen junger Winzer oder zaubern Sie den perfekten Espresso. In unseren Genuss-Events, individuellen Kochkursen, intensiven Whisky-Tastings, sinnlichen Weinseminaren und Barista-Kursen wecken wir Ihre Leidenschaft für großen Genuss und machen Sie zum Virtuosen am Kochlöffel, Cocktailshaker oder Korkenzieher.</p>
@@ -1757,7 +1760,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="products" class="GWA products seller">
+					<div id="products" class="GWA single products seller">
 						<div class="container">
 							<div class="products-title">
 								<h2>Wunschdatum finden:</h2>
@@ -1793,7 +1796,7 @@
 								</div>
 								<span>Super – Es wurden 5 Termine gefunden!</span>
 							</div>							
-							<div class="products-table">
+							<div class="products-table single">
 								<div class="seller-wrapper">
 									<div class="card">
 										<a href="#" class="card__image">
@@ -2268,7 +2271,327 @@
 
 	</div>
 
+	<div class="GWA footer">
+		<div class="container">
+			<a href="#root-wrapper" class="scroll-up">
+				<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/scrollup.svg"
+					alt="Arrow Up Icon" class="scroll-up-icon">
+				<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/scrollup-mobile.svg"
+					alt="Arrow Up Icon" class="scroll-up-icon-mobile">
+			</a>
+			<div class="footer-table">
+				<div class="footer-wrapper contact">
+					<h5>Kundenservice</h5>
+					<div class="footer-list">
+						<a href="tel:+4989215522040" class="footer__link">
+							<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/awesome-phone.svg"
+								alt="Phone Icon">
+							089 - 21 55 22 040 </a>
+						<div class="footer__link clock">
+							<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/clock.svg"
+								alt="Clock Icon">
+							Mo-Fr 9-17 Uhr
+						</div>
+						<a href="mailto:kundenservice@miomente.de" class="footer__link">
+							<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/email.svg"
+								alt="Email Icon">
+							kundenservice@miomente.de </a>
+						<div class="footer-tab">
+							<span style="font-size: 23px;font-weight: 700;line-height: 1.2;color:#ffffff">5€
+								Gutschein</span>
+							<p>Sichern Sie sich 5€ Startguthaben und melden Sie sich zum Newsletter an.</p>
+							<a href="https://www.miomente.de/newsletteranmeldung/" class="btn-primary">Anmelden</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-wrapper cities">
+					<h5 class="dropdown__trigger">Die Miomente Städte</h5>
+					<div class="footer-list dropdown-list">
+						<a href="https://www.miomente.de/augsburg/" class="footer__link" title="Augsburg">Augsburg</a>
+						<a href="https://www.miomente.de/berlin/" class="footer__link" title="Berlin">Berlin</a>
+						<a href="https://www.miomente.de/bielefeld/" class="footer__link" title="Bielefeld">Bielefeld</a>
+						<a href="https://www.miomente.de/bonn/" class="footer__link" title="Bonn">Bonn</a>
+						<a href="https://www.miomente.de/bremen/" class="footer__link" title="Bremen">Bremen</a>
+						<a href="https://www.miomente.de/darmstadt/" class="footer__link" title="Darmstadt">Darmstadt</a>
+						<a href="https://www.miomente.de/dortmund/" class="footer__link" title="Dortmund">Dortmund</a>
+						<a href="https://www.miomente.de/dresden/" class="footer__link" title="Dresden">Dresden</a>
+						<a href="https://www.miomente.de/duesseldorf/" class="footer__link"
+							title="Düsseldorf">Düsseldorf</a>
+						<a href="https://www.miomente.de/essen/" class="footer__link" title="Essen">Essen</a>
+						<a href="https://www.miomente.de/frankfurt/" class="footer__link"
+							title="Frankfurt am Main">Frankfurt am Main</a>
+						<a href="https://www.miomente.de/freiburg/" class="footer__link" title="Freiburg">Freiburg</a>
+						<a href="https://www.miomente.de/hamburg/" class="footer__link" title="Hamburg">Hamburg</a>
+						<a href="https://www.miomente.de/hannover/" class="footer__link" title="Hannover">Hannover</a>
+						<a href="https://www.miomente.de/heidelberg/" class="footer__link" title="Heidelberg">Heidelberg</a>
+						<a href="https://www.miomente.de/karlsruhe/" class="footer__link" title="Karlsruhe">Karlsruhe</a>
+						<a href="https://www.miomente.de/koeln/" class="footer__link" title="Köln">Köln</a>
+						<a href="https://www.miomente.de/leipzig/" class="footer__link" title="Leipzig">Leipzig</a>
+						<a href="https://www.miomente.de/mainz/" class="footer__link" title="Mainz">Mainz</a>
+						<a href="https://www.miomente.de/mannheim/" class="footer__link" title="Mannheim">Mannheim</a>
+						<a href="https://www.miomente.de/muenchen/" class="footer__link" title="München">München</a>
+						<a href="https://www.miomente.de/muenster/" class="footer__link" title="Münster">Münster</a>
+						<a href="https://www.miomente.de/nuernberg/" class="footer__link" title="Nürnberg">Nürnberg</a>
+						<a href="https://www.miomente.de/regensburg/" class="footer__link" title="Regensburg">Regensburg</a>
+						<a href="https://www.miomente.de/stuttgart/" class="footer__link" title="Stuttgart">Stuttgart</a>
+						<a href="https://www.miomente.de/wiesbaden/" class="footer__link" title="Wiesbaden">Wiesbaden</a>
+						<a href="https://www.miomente.de/wuppertal/" class="footer__link" title="Wuppertal">Wuppertal</a>
+					</div>
+				</div>
+				<div class="footer-wrapper shop">
+					<h5 class="dropdown__trigger">Shop</h5>
+					<div class="footer-list dropdown-list">
+						<a href="https://www.miomente.de/deutschland/genuss-kategorien/" class="footer__link"
+							title="Genuss-Events vor Ort">Genuss-Events vor Ort</a>
+						<a href="https://www.miomente.de/deutschland/eventsathome/" class="footer__link"
+							title="Online-Events">Online-Events</a>
+						<a href="https://www.miomente.de/deutschland/geschenkideen/" class="footer__link"
+							title="Geschenkideen">Geschenkideen</a>
+						<a href="https://www.miomente.de/deutschland/firmen-events/" class="footer__link"
+							title="Firmen-Events">Firmen-Events</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="payment-list">
+					<h5>Zahlungsarten</h5>
+					<div class="payment__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/visa.svg"
+							alt="Visa Logo">
+					</div>
+					<div class="payment__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/mastercard.svg"
+							alt="MasterCard Logo">
+					</div>
+					<div class="payment__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/paypal.svg"
+							alt="PayPal Logo">
+					</div>
+					<div class="payment__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/lastschrift.svg"
+							alt="Lastschrift Logo">
+					</div>
+					<div class="payment__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/rechnung.svg"
+							alt="Rechnung Logo">
+					</div>
+				</div>
+				<div class="safety-list">
+					<h5>Sicherheit</h5>
+					<div>
+						<script nodefer="" src="https://secure.trust-provider.com/trustlogo/javascript/trustlogo.js"
+							type="text/javascript"></script>
+						<script nodefer=""
+							type="text/javascript">TrustLogo("https://www.miomente.de/skin/frontend/ultimo/default/images/sectigo_trust_seal_md_106x42.png", "SC5", "none");</script>
+						<a href="javascript:if(window.open('https://secure.trust-provider.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://www.miomente.de/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);"
+							onmouseover="tLeB(event,'https://secure.trust-provider.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://www.miomente.de/&amp;x=6&amp;y=5','tl_popupSC5')"
+							onmousemove="tLXB(event)" onmouseout="tLTC('tl_popupSC5')" ondragstart="return false;"><img
+								src="https://www.miomente.de/skin/frontend/ultimo/default/images/sectigo_trust_seal_md_106x42.png"
+								border="0"
+								onmousedown="return tLKB(event,'https://secure.trust-provider.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://www.miomente.de/&amp;x=6&amp;y=5');"
+								oncontextmenu="return tLLB(event);"></a>
+						<!---->
+						<div id="tl_popupSC5" name="tl_popupSC5"
+							style="position:absolute;z-index:0;visibility: hidden;background-color: transparent;overflow:hidden;"
+							onmouseover="tLoB('tl_popupSC5')" onmousemove="tLpC('tl_popupSC5')"
+							onmouseout="tLpB('tl_popupSC5')">&nbsp;</div>
+					</div>
+					<div style="margin-left:25px">
+						<a href="https://pci.usd.de/compliance/1741-F60F-3AC3-AEF1-8E70-B415/details_de.html" rel="nofollow"
+							target="_blank"
+							onclick="window.open(this.href, '', 'width = 600, height = 615, left = 100, top = 200'); return false;"><img
+								style="margin-right:35px"
+								src="https://pci.usd.de/compliance/1741-F60F-3AC3-AEF1-8E70-B415/seal_ctv_100.png"
+								width="60"></a>
+					</div>
+				</div>
+				<div class="social-list">
+					<h5>Fan werden</h5>
+					<a href="https://www.facebook.com/miomente.de" class="social__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/facebook.svg"
+							alt="Facebook Logo">
+					</a>
+					<a href="https://instagram.com/miomente" class="social__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/instagram.svg"
+							alt="Instagram Logo">
+					</a>
+					<a href="http://pinterest.com/miomente/" class="social__item">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/pinterest.svg"
+							alt="Pinterest Logo">
+					</a>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="copyright-list">
+					<a href="https://www.miomente.de/kontakt/" class="copyright__link contact">Kontakt</a>
+					<a href="https://www.miomente.de/datenschutz/" class="copyright__link datenschutz"
+						title="Datenschutz">Datenschutz</a>
+					<a href="https://www.miomente.de/agb/" class="copyright__link agb" title="AGB">AGB</a>
+					<a href="https://www.miomente.de/faqs/" class="copyright__link faq" title="FAQ">FAQ</a>
+					<a href="https://www.miomente.de/impressum/" class="copyright__link impressum"
+						title="Impressum">Impressum</a>
+				</div>
+				<div class="language-list">
+					<div class="language__item active" title="Deutschland">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/germany.svg"
+							alt="Deutschland">
+						Deutschland
+					</div>
+					<a href="https://www.miomente.at/" class="language__item" title="Österreich">
+						<img src="https://www.miomente.de/skin/frontend/ultimo/default/images/goldenwebage/icons/austria.svg"
+							alt="Österreich">
+						Österreich
+					</a>
+				</div>
+			</div>
+		</div>
+		<div style="text-align: center">
+			<style>
+				@font-face {
+					font-family: ProvenExpertStars;
+					src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAhkABEAAAAAErQAAAgFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGiAGVgCCUggKCZZwEQgKUGEBNgIkAxQLDAAEIAWEfgc5DHs/d2ViZgYbjBFRlGxSg+xngbt3LygG2EnDD067I9KEz3Hyda0vg/jeptXvzx9pJF7iMbEsE8mEsLK8B4DxhVsXsXVAERBGgDlBAwS0Iof/T90nFWXCbq7yErYcokV9SniXpaD8YYt6izLjrjpy2Cyd3TmAoJED2qIO7bh/wM7o/7f2at9MUiJhezrn1MjGuuybv5t/532ibUq7P0RbAhSGHCpAcCRUhK039TUYm/3hKsDKYTTaW/ufBAjA21UX3wN82PbpXUb5ka+4c/3A8Q1QCIIm7CHuaz4l92KizYPmfevMOePvG5+xoIKgMA3oF/UsNS4QSfnnJ453/nvHM9UZXhOiGzCU7OmA6hDZJDUhYLEBBZD5mP//t3q/dB7XRVwEiCPPqiiRt6H/S8LfL/s5QPAdR0l6+4/u+1scn58ihSvS//OJusGI0vZ/546jbGbTyjn4B9qwxzvm4BFgxyceBc3F8zvo8FOf7t0czUZ7n6MzV3UjomcnOiKpEqXWUOl/UokRtXPS/b4nFKFViVAieh6qwTq3t8L9FnPA2XzntnQxFRdyoj+tQiwlg7e4SMljQCOhtZ0LkzsRUwIOCXVfNyGxR8NEWl7zYqZB3FTJrK0L8WiGcXW8BtWx5P6ylVAlpUn32415p2r3UrQUEUb2485VDfIrfZTHBE7e6Qm6BQ73j0gwgYQWlZ4gGRJjXj1OqIbreTj7p12qzDGRnMLLeUieZqF3thxH4bbr6OO40PEZdwEvEjMgWrNGXVIyCLaXSqx6chR7RaRvVsJQa4f5H4wnbZHkDEexatY2B/L+QpDQe5qlKLrKXLrtPD4UFUQstEOPH0gs4eUbyTMHJCR8HvWhfCt6AhDB7ujXP+2yKv8YfmZ1M8IvwTxBvD2IRefDdBVfYaeeA3i7G9/u3yhWbt9yaP6DKPR4mA5oL0aSQMASEKWheFXlexAyNWHoTiwd14/W0A0tl7na1RmSOJkqiuOXlZ6QWoGJ6JhwtjNMOzN4zyi4MzZECLdeqB2ncXAIS0UQHUQCEjTCIwG3QByUkeR3sL9M171CN1MOVrOI3qmuJM9hFEZ3PEdQxKCjWtExbdBxremENumkdtAp7aTT2qIz2tU4iyUcbquFOqe2ymaCBDCQCAaSwEAyGEgBA6lgIA0MpIPRzIDW5hJlJjPBWANzy6C/Y4nJmFB9WSDT5Ftz9WRDmqirY2uf2Wtq5yO9ubLUk9P/G8qU7CsyudewfXJ7ZDu3m3nQYxGvIYQlinK+MGIlMi9m+gt63+GGPSt5/shtT36bT0YTEfuA7TPcpjCaC2uegngRwlncFxSiKDe9pkYTkCnb97q7fWIsahWnbX4/REJf4GVy9ranCDBFq2zD74uLdxZdrkhrXTF7FYeV1WwHhJaQYKGYuZPXjuzGn2q/alfaS8LVkykEExbVJSW8ShtnNB+RoSzEXuL3Ucxzw2A7D4sU28px+emy3eTrtiahQxuPG6zwaIxS3VZwwqyVM8C4yEaEqa2y3RheYdwa0Rp4Wmbn+bVVNXHylLQ/LboYM8QKtvbMU3orwpLAT4/BJfFISVl3ce393lyXr9hozVwVCPZeTlt1d9Ghnn1ev1dTg7TDWeuPiifeYk955TkOi8uf3e02LxjGgQqYmh5723gvai01JcsfvuOpvNVmZz9VCXccfeVqUGQ5JmpAsXWl8kTxBN0BeQqaDVnmicyuoGd5Yq1qWlNjz/K6uWvrYpU1TMN/YjLzuO78Simu2XNj67GuuiSeq+uIoO26vups7beho7mqITO5M0s9j+AtOdOQf/U08vqa6oJ3FQmvouaaQp1a1mU6MjUadwL4m1JrPRWLtJwSbXWvGag1VbsW6pgqqE4boK45UIduaKEeEaAXFtQ3B6rRDy00IAIMwoKG5kAEw9BCIyLAKCxobA7UYxxaaEIEmIQFTc2BGkxDC82IALOw6J2r90u62M27ivsVVsuCqpTFueQRVUVL+dKEbhkWsmIxZBV8obVJZW79aiEbEkM2waCtSeVu+2ohOxJDzoOxWrR+3KXVT9EDQta+tbhvJPecfkr6cxDkH0kpABUTFTf/P4wfOGE04EgIot1CNr5iMrozHQ1MT2b8mN4oX79a9Vzpc1+/8NFHvtn3eyT+Bo/XRHKykMtDeeUb3TkdqPzVOmdd7RKuw9js/zJnm2MGlk4spRZfqYTtEdtfCs0wrYp6QMSmc4OUBItN3AmfpoCgXeB4ExYf8kvENlpOiZhhcTdBoDMFDhzW408wEO0C1jgJI2huNAq4dUEDmgUwJkfdaRwoLho3Q9xvPKT6y7zO0WzzBqGKzZtYsjTvLbyy9SNfGJzs8muWtrdiixsb23bfYnlvYzZqDy/mgu97DfVss8NlRFllmRVi2NK398tgCwvJV3TCXORi23aC5CpbzLKBFWfZI8YKF7tIRrAtsb0JYywCG1KYa54MbpLrGgVDhBPKapLQlk8Q2qhm2TrLbMb8QpXhLhc2YViMyVLhEi3sfLamajptO/wN11hknhi5rUnG2KFcHtspsUaHWWQuIhAn2ymcdBfDHCnT+kPKhZ12nF2otI/CdRZZ5w6xPkFUye8Kt66tn/PssbqRaNXB8v4kDqNrmYCghD3PcO5trYaLmgZ6NzYbZTn8iNf7RuIid48iH+mNd+KYdXHINNpalzwLuKwPMWiIJ8utvXE/8mOkGAsN8VTPg56zrkV05Nb5g5FwjNIPi+PNfEb+vwl9V1zRgAwl/zcB) format("woff2"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
+					font-weight: 400;
+					font-style: normal;
+					font-display: swap
+				}
 
+				#pe_rating {
+					display: inline-block;
+					font-size: 16px;
+					text-align: center;
+					color: #c8b274;
+					border: none;
+					text-decoration: none;
+					outline: none;
+					font-size-adjust: .5
+				}
+
+				#pe_rating,
+				#pe_rating * {
+					box-sizing: border-box
+				}
+
+				#pe_rating #pe_additional_info {
+					overflow: hidden;
+					height: 20px;
+					margin: -20px;
+					line-height: 200px;
+					padding-top: 20px
+				}
+
+				#pe_rating.pe_g #pe_name {
+					overflow: hidden;
+					position: absolute;
+					height: 10px;
+					line-height: 50px;
+					padding-top: 50px
+				}
+
+				#pe_rating.pe_g #pe_name img {
+					display: block
+				}
+
+				#pe_rating.pe_g .pe_u {
+					display: block;
+					margin: 0 0 .3em;
+					font-size: .8em;
+					line-height: 1.2em
+				}
+
+				#pe_rating.pe_g.pe_l>span>span {
+					margin-left: .1em;
+					margin-right: .1em
+				}
+
+				#pe_rating.pe_g.pe_l>span>span.pe_u {
+					vertical-align: .0781249988358466em
+				}
+
+				#pe_rating.pe_t.pe_b>span>span:first-of-type {
+					display: inline
+				}
+
+				#pe_rating.pe_t #pe_name,
+				#pe_rating.pe_t>span>span {
+					font-size: .8em;
+					line-height: 1.2em
+				}
+
+				#pe_rating.pe_t>span>span {
+					display: block
+				}
+
+				#pe_rating.pe_l>span>.pe_u,
+				#pe_rating.pe_l>span>span {
+					display: inline-block
+				}
+
+				#pe_rating>span>.pe_u {
+					text-decoration: underline
+				}
+
+				#pe_rating>span>.pe_u:hover {
+					text-decoration: none
+				}
+
+				#pe_stars {
+					display: inline-block;
+					position: relative;
+					overflow: hidden;
+					width: 5em;
+					height: 1.1em;
+					margin: 0 !important;
+					line-height: 1em;
+					font-size: 1em;
+					text-align: left
+				}
+
+				#pe_stars:before {
+					font-family: ProvenExpertStars, Arial, Helvetica, sans-serif;
+					content: "\2605\2605\2605\2605\2605";
+					letter-spacing: 0;
+					color: #ccc
+				}
+
+				#pe_stars:before,
+				#pe_stars>span {
+					position: absolute;
+					top: .1em;
+					left: 0
+				}
+
+				#pe_stars>span {
+					display: block;
+					overflow: hidden;
+					padding-top: 1.2em
+				}
+
+				#pe_stars>span:before {
+					font-family: ProvenExpertStars, Arial, Helvetica, sans-serif;
+					content: "\2605\2605\2605\2605\2605";
+					position: absolute;
+					top: 0;
+					left: 0;
+					letter-spacing: 0;
+					color: #c8b274
+				}
+			</style><a id="pe_rating" vocab="https://schema.org/" typeof="Product"
+				title="Kundenbewertungen &amp; Erfahrungen zu Miomente GmbH. Mehr Infos anzeigen." target="_blank"
+				href="https://www.provenexpert.com/miomente-gmbh/" class="pe_g pe_b"> <span id="pe_name"> <span
+						property="name">Miomente GmbH</span> <span property="brand" typeof="Brand"></span> <span
+						property="mpn" typeof="Text"></span> <span property="sku" typeof="Text"></span> <span
+						property="description">Kochkurse, Krimidinner, Weinproben, Gin-Tastings, Backkurse,
+						Barista-Kurse</span> <span property="review" typeof="Review"> <span property="author"
+							typeof="Person"> <span property="name">Anonym</span> </span> </span> <span property="image"
+						src="https://images.provenexpert.com/9c/da/944ceb3cf4a3a5f17d2eb8978562/miomente-gmbh_full_1625654908.jpg"></span>
+				</span> <span property="aggregateRating" typeof="AggregateRating"> <span id="pe_stars"> <span
+							style="width: 90%;"> <span></span> hat <span><span property="ratingValue">4,34</span> von <span
+									property="bestRating">5</span> Sternen<span></span></span> </span> </span> <span
+						class="pe_u"> <span property="reviewCount">602</span> Bewertungen auf ProvenExpert.com </span>
+				</span> </a>
+		</div>
+	</div>
+	<!-- end: footer-container -->
 
 	</div>
 	</div>
