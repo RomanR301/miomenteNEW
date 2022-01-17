@@ -319,6 +319,7 @@ body.lock {
 
 .GWA.subscribe h4 {
   color: #A4006A;
+  line-height: 1.3;
   font-size: 34px;
   margin-bottom: 24px;
 }
@@ -970,7 +971,10 @@ body.lock {
 /* Media 991px */
 @media screen and (max-width: 991px) {
   .GWA.single.products {
-    margin-bottom: 180px;
+    margin-bottom: 100px;
+  }
+  .GWA .filters.single {
+    margin-top: 20px;
   }
   .GWA.single.breadcrumbs {
     margin: 20px 0 32px;
@@ -981,6 +985,10 @@ body.lock {
   /* Start Info =====> */
   .GWA.single.info {
     padding-top: 50px;
+  }
+  .GWA.single.info h2 {
+    margin-bottom: 15px;
+    max-width: 360px;
   }
   /* End Info */
   /* Start Datepicker =====> */
